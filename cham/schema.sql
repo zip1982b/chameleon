@@ -9,7 +9,9 @@ CREATE TABLE user (
 
 CREATE TABLE user_data (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  passport_number INTEGER NOT NULL,
-  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (author_id) REFERENCES user (id)
-); 
+  last_name TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+  patronymic TEXT NOT NULL,
+  data_of_birth TEXT NOT NULL
+);
+
